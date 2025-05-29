@@ -1,6 +1,7 @@
 import pygame
 import sys
 import textwrap
+import random
 
 # --- Initialize ---
 pygame.init()
@@ -21,6 +22,42 @@ portraits = {
     "partner": pygame.transform.scale(pygame.image.load("partner.jpg"), (200, 200)),
 }
 
+side_events = [
+    {
+        "id": "corrupt_cop_tip",
+        "text": "A stranger brushes past you in the hallway. 'Someone in your squad is dirty,' he whispers.",
+        "effect": lambda state: state["clues_found"].append("corrupt cop tip")
+    },
+    {
+        "id": "bloody_photo",
+        "text": "A kid hands you a photo soaked in blood. On the back: a name – *Vega*.",
+        "effect": lambda state: state["clues_found"].append("bloody photo")
+    },
+    {
+        "id": "police_chief_warning",
+        "text": "Chief Martinez pulls you aside. 'Watch Vega. But don’t dig too deep. That’s an order.'",
+        "effect": lambda state: state.update({"trust_vega": state["trust_vega"] - 1})
+    },
+    {
+        "id": "flashback",
+        "text": "You stare into the neon rain... and remember the last time you saw your brother alive.",
+        "effect": lambda state: state.update({"alignment": "vice" if state["alignment"] == "neutral" else state["alignment"]})
+    },
+    {
+        "id": "dead_drop",
+        "text": "You find a cassette tape in your locker. Someone wants to talk.",
+        "effect": lambda state: state["clues_found"].append("mysterious cassette")
+    }
+]
+
+# --- Game State ---
+game_state = {
+    "trust_vega": 0,
+    "clues_found": [],
+    "alignment": "neutral",
+    "side_events_triggered": []
+}
+
 # --- Dialogue Data ---
 scenes = {
     "scene_1": {
@@ -38,7 +75,7 @@ scenes = {
         "background": "police_station",
         "portrait": "partner",
         "dialogue": [
-            "At the station, your partner Diaz briefs you on the case.",
+            "At the station, your partner Rockett briefs you on the case.",
             "\"This guy's no small-time dealer,\" he says, pointing to the photo.",
             "\"His name's Carlos Vega. Known for dirty money and worse.\"",
             "You prepare to visit Vega’s last known hangout."
@@ -65,6 +102,21 @@ scenes = {
 current_scene = "scene_1"
 dialogue_index = 0
 choice_made = None
+
+def show_side_event(event_text):
+    showing_event = True
+    while showing_event:
+        screen.fill((0, 0, 0))
+        draw_wrapped_text(event_text, font, (255, 255, 255), 100, 250, 600, screen)
+        pygame.draw.rect(screen, (255, 255, 255), (80, 230, 640, 140), 2)
+        pygame.display.flip()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                showing_event = False
 
 # --- Text wrapping function ---
 def draw_wrapped_text(text, font, color, x, y, max_width, surface, line_height=32):
@@ -130,6 +182,7 @@ while running:
                             scenes["scene_3"]["dialogue"].append(
                                 "Vega's smile fades, sweat beads on his forehead."
                             )
+                            game_state["trust_vega"] -= 1
                         else:
                             # Play it cool
                             scenes["scene_3"]["dialogue"].append(
@@ -138,6 +191,7 @@ while running:
                             scenes["scene_3"]["dialogue"].append(
                                 "\"Smart move,\" Vega says. \"Maybe we'll talk.\""
                             )
+                            game_state["trust_vega"] += 1
                     dialogue_index += 1  # Move dialogue forward after choice
                     choice_made = None
 
@@ -152,7 +206,18 @@ while running:
                         # Move to next scene
                         if "next" in scene_data:
                             current_scene = scene_data["next"]
-                            dialogue_index = 0
+                            # --- Random side event trigger ---
+                            if random.random() < 0.5:
+                                available_events = [e for e in side_events if e["id"] not in game_state["side_events_triggered"]]
+                                if available_events:
+                                    event = random.choice(available_events)
+                                    game_state["side_events_triggered"].append(event["id"])
+                                    event["effect"](game_state)
+                                    show_side_event(event["text"])
+
+                            if "next" in scene_data:
+                                current_scene = scene_data["next"]
+                                dialogue_index = 0
                         else:
                             print("End of story.")
                             running = False
