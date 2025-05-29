@@ -96,70 +96,6 @@ scenes = {
             "Press Vega harder.",
             "Play it cool and observe."
         ]
-    },
-    "scene_4_trap": {
-        "background": "docks",
-        "portrait": "suspect",
-        "dialogue": [
-            "Vega grins, \"Warehouse on 8th and Main. You’ll find your answers there.\"",
-            "You arrive alone. Quiet. Too quiet.",
-            "Suddenly— gunfire! It's a trap."
-        ],
-        "next": "scene_4_lead"
-    },
-    "scene_4_lead": {
-        "background": "docks",
-        "portrait": "suspect",
-        "dialogue": [
-            "Vega exhales, glancing over his shoulder.",
-            "\"There's a safehouse in Little Havana. Midnight dropoffs. You didn’t hear it from me.\"",
-            "As you tail the suspects, tires screech— they’re making a run for it!"
-        ],
-        "next": "scene_5_shootout"
-    },
-    "scene_5_shootout": {
-        "background": "police_station",
-        "portrait": "rico",
-        "dialogue": [
-            "[ACTION] Press A, S, or D when prompted!"
-        ],
-        "next": "scene_5_chase"
-    },
-    "scene_5_chase": {
-        "background": "miami_night",
-        "portrait": "rico",
-        "dialogue": [
-            "[ACTION] Press A, S, or D when prompted!"
-        ],
-        "next": "scene_6_check"
-    },
-    "scene_6_check": {
-    "background": "police_station",
-    "portrait": "partner",
-    "dialogue": [
-        "You review your clues carefully. Something doesn’t add up.",
-        "There might be a conspiracy in the department."
-    ],
-    "next": "scene_6_conspiracy"  # or another scene key
-    },
-    "scene_6_conspiracy": {
-        "background": "police_station",
-        "portrait": "partner",
-        "dialogue": [
-            "You lock the door. Insert the cassette. Static, then a voice—",
-            "\"...Chief Martinez, the money’s in the locker. Vega’s untouchable now.\"",
-            "Your partner’s face turns pale. \"Rico... what the hell is this?\"",
-            "You realize the corruption runs deeper than you thought."
-        ] 
-    },
-    "scene_6_nothing": {
-        "background": "police_station",
-        "portrait": "partner",
-        "dialogue": [
-            "The case stalls. Not enough evidence.",
-            "You stare at the neon haze, wondering what you missed.",
-            "Another case buried in the Miami night."
-        ]
     }
 }
 
@@ -204,14 +140,18 @@ running = True
 while running:
     screen.fill((0, 0, 0))
     scene_data = scenes[current_scene]
+
+    # Draw background and portrait
     bg = backgrounds[scene_data["background"]]
     portrait = portraits[scene_data["portrait"]]
     screen.blit(bg, (0, 0))
     screen.blit(portrait, (20, 350))
 
+    # Draw dialogue box
     pygame.draw.rect(screen, (0, 0, 0), (200, 400, 580, 160))
     pygame.draw.rect(screen, (255, 255, 255), (200, 400, 580, 160), 2)
 
+    # Show dialogue or choices
     if "choices" in scene_data and dialogue_index == len(scene_data["dialogue"]):
         draw_choices(scene_data["choices"], font, screen)
     else:
@@ -220,12 +160,14 @@ while running:
 
     pygame.display.flip()
 
+    # Event handling
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
         elif event.type == pygame.KEYDOWN:
             if "choices" in scene_data and dialogue_index == len(scene_data["dialogue"]):
+                # Handle choice input (1 or 2)
                 if event.key == pygame.K_1:
                     choice_made = 1
                 elif event.key == pygame.K_2:
@@ -233,44 +175,38 @@ while running:
                 if choice_made:
                     if current_scene == "scene_3":
                         if choice_made == 1:
-                            scenes["scene_3"]["dialogue"].extend([
-                                "\"You're lying, Vega. Tell me the truth or I'll make you regret it.\"",
+                            # Press Vega harder
+                            scenes["scene_3"]["dialogue"].append(
+                                "\"You're lying, Vega. Tell me the truth or I'll make you regret it.\""
+                            )
+                            scenes["scene_3"]["dialogue"].append(
                                 "Vega's smile fades, sweat beads on his forehead."
-                            ])
+                            )
                             game_state["trust_vega"] -= 1
                         else:
-                            scenes["scene_3"]["dialogue"].extend([
-                                "You nod slowly, watching him carefully, waiting for a slip.",
+                            # Play it cool
+                            scenes["scene_3"]["dialogue"].append(
+                                "You nod slowly, watching him carefully, waiting for a slip."
+                            )
+                            scenes["scene_3"]["dialogue"].append(
                                 "\"Smart move,\" Vega says. \"Maybe we'll talk.\""
-                            ])
+                            )
                             game_state["trust_vega"] += 1
-                    dialogue_index += 1
+                    dialogue_index += 1  # Move dialogue forward after choice
                     choice_made = None
+
             else:
+                # Regular dialogue advance
                 dialogue_index += 1
                 if dialogue_index >= len(scene_data["dialogue"]):
                     if "choices" in scene_data:
+                        # Wait for choice input
                         dialogue_index = len(scene_data["dialogue"])
                     else:
-                        next_scene = scene_data.get("next")
-                        if next_scene:
-                            current_scene = next_scene
-
-                            # Dynamic scene logic
-                            if current_scene == "scene_3":
-                                if game_state["trust_vega"] <= 0:
-                                    current_scene = "scene_4_trap"
-                                else:
-                                    current_scene = "scene_4_lead"
-                            elif current_scene in ["scene_5_shootout", "scene_5_chase"]:
-                                current_scene = "scene_6_check"
-                            elif current_scene == "scene_6_check":
-                                if len(game_state["clues_found"]) >= 3:
-                                    current_scene = "scene_6_conspiracy"
-                                else:
-                                    current_scene = "scene_6_nothing"
-
-                            # Random side event trigger
+                        # Move to next scene
+                        if "next" in scene_data:
+                            current_scene = scene_data["next"]
+                            # --- Random side event trigger ---
                             if random.random() < 0.5:
                                 available_events = [e for e in side_events if e["id"] not in game_state["side_events_triggered"]]
                                 if available_events:
@@ -279,11 +215,12 @@ while running:
                                     event["effect"](game_state)
                                     show_side_event(event["text"])
 
-                            dialogue_index = 0
+                            if "next" in scene_data:
+                                current_scene = scene_data["next"]
+                                dialogue_index = 0
                         else:
                             print("End of story.")
                             running = False
-
 
 pygame.quit()
 sys.exit()
