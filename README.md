@@ -17,9 +17,16 @@ It's like someone looked at the 80s and thought, "What if cops wore neon and lis
 - Miami looks like a pastel fever dream. 🏖️🎨
 
 ## Best episodes to pretend you're cultured: 🎭📚
+
 - Season 1, Episode 1: The grand intro to this pastel madness. 🎬🌈
+- Season 1, Episode 15: "Smuggler's Blues" - Glenn Frey shows up and it's basically a music video with crime. 🎸🚔
+- Season 2, Episode 1: "The Prodigal Son" - More family drama than a soap opera, but with better jackets. 👨‍👦👔
 - Season 2, Episode 9: When things get dark... but not too dark. We're still in the 80s. 🌙✨
+- Season 3, Episode 7: "The Afternoon Plane" - Phil Collins guest stars because why not add more 80s? 🥁✈️
+- Season 4, Episode 1: "Contempt of Court" - Don Johnson proves he can brood AND look fabulous. 😤💅
 - Season 4, Episode 12: Because Don Johnson's smoldering stare cures all. 😍🔥
+- Season 5, Episode 1: "Hostile Takeover" - The finale season starts with a bang and questionable wardrobe choices. 💥👗
+- Season 5, Episode 21: "Freefall" - The series finale where they somehow make leaving Miami dramatic. 🌴😭
   
 ## How to enjoy this repo: 🎉📖
 1. Laugh at the fact that this is actually a show. 😂📺
