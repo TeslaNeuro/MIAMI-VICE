@@ -1,7 +1,7 @@
 # MIAMI VICE 🌴🕶️
 
 ## What is this, the 80s? 📺✨
-Yeah, you guessed it. *Miami Vice* — the show that's basically crime fighting meets pastel fashion disaster. 👮‍♂️💖  
+Yeah, you guessed it. *Miami Vice* : the show that's basically crime fighting meets pastel fashion disaster. 👮‍♂️💖  
 It's like someone looked at the 80s and thought, "What if cops wore neon and listened to saxophones all day?" 🎷🌈
 
 ## Why watch this relic? 🤔💎
@@ -41,7 +41,6 @@ It's like someone looked at the 80s and thought, "What if cops wore neon and lis
 10. Accept that sometimes style matters more than substance. 💅🎨
 ---
 ## Final thoughts: 💭🎬
-If you want a show about serious crime and even more serious fashion mistakes, *Miami Vice* is your jam. 🍓🎭  
-Or just binge some cat videos — honestly, same level of sophistication. 🐱📱
+If you want a show about serious crime and even more serious fashion mistakes, *Miami Vice* is your jam. 🍓🎭 Or just binge some cat videos; honestly, same level of sophistication.
 ---
 *Pro tip:* If you catch yourself thinking "Why is this so cool?", just blame the saxophone. 🎷🤷‍♂️
