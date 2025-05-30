@@ -1,4 +1,4 @@
-# MIAMI-VICE 🌴🕶️
+# MIAMI VICE 🌴🕶️
 
 ## What is this, the 80s? 📺✨
 Yeah, you guessed it. *Miami Vice* — the show that's basically crime fighting meets pastel fashion disaster. 👮‍♂️💖  
