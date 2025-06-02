@@ -18,15 +18,29 @@ It's like someone looked at the 80s and thought, "What if cops wore neon and lis
 
 ## Best episodes to pretend you're cultured: 🎭📚
 
-- Season 1, Episode 1: The grand intro to this pastel madness. 🎬🌈
-- Season 1, Episode 15: "Smuggler's Blues" - Glenn Frey shows up and it's basically a music video with crime. 🎸🚔
-- Season 2, Episode 1: "The Prodigal Son" - More family drama than a soap opera, but with better jackets. 👨‍👦👔
-- Season 2, Episode 9: When things get dark... but not too dark. We're still in the 80s. 🌙✨
-- Season 3, Episode 7: "The Afternoon Plane" - Phil Collins guest stars because why not add more 80s? 🥁✈️
-- Season 4, Episode 1: "Contempt of Court" - Don Johnson proves he can brood AND look fabulous. 😤💅
-- Season 4, Episode 12: Because Don Johnson's smoldering stare cures all. 😍🔥
-- Season 5, Episode 1: "Hostile Takeover" - The finale season starts with a bang and questionable wardrobe choices. 💥👗
-- Season 5, Episode 21: "Freefall" - The series finale where they somehow make leaving Miami dramatic. 🌴😭
+1. Brother's Keeper  
+Pilot episode where Crockett and Tubbs prove crime doesn’t stand a chance—mostly because they keep stealing the spotlight (and maybe a few speedboats) 🚤😎.
+
+2. Calderone's Return  
+Two parts of ‘Who’s bad?’ — Spoiler: It’s still Calderone, and Crockett’s hair is just as perfect as ever 💇‍♂️🔥.
+
+3. Out Where the Buses Don't Run  
+Where the action’s so intense even the buses refuse to show up 🚌❌. Miami’s public transit: officially on vacation 🌴😅.
+
+4. Golden Triangle  
+Two parts of international intrigue, because one part wasn’t enough to confuse everyone 🌍🕵️‍♂️🤯.
+
+5. Little Prince  
+An episode so good, even the criminals pause to admire the sunset… before getting arrested 🌅🚓.
+
+6. Definitely Miami  
+When you’re not sure if it’s a crime show or a travel ad—spoiler: it’s definitely Miami 🌞🌴🕶️.
+
+7. The Afternoon Plane  
+The only time catching a plane feels more dangerous than catching a criminal… Miami traffic, am I right? ✈️🚗💥.
+
+8. Payback  
+Revenge is a dish best served cold—unless you’re Crockett, who prefers it with a side of sunglasses and cigars 😎🔥💼.
   
 ## How to enjoy this repo: 🎉📖
 1. Laugh at the fact that this is actually a show. 😂📺
