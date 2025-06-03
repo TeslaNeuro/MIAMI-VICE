@@ -18,29 +18,41 @@ It's like someone looked at the 80s and thought, "What if cops wore neon and lis
 
 ## Best episodes to pretend you're cultured: 🎭📚
 
-1. Brother's Keeper  
-Pilot episode where Crockett and Tubbs prove crime doesn’t stand a chance—mostly because they keep stealing the spotlight (and maybe a few speedboats) 🚤😎.
+1. **Brother's Keeper 1&2**  
+Two cops walk into Miami… and somehow the criminals die faster than their one-liners 🚤🔫😈.
 
-2. Calderone's Return  
-Two parts of ‘Who’s bad?’ — Spoiler: It’s still Calderone, and Crockett’s hair is just as perfect as ever 💇‍♂️🔥.
+2. **Out Where the Buses Don't Run**  
+So much death, even the buses don’t want to stick around for the body count 🚌☠️.
 
-3. Out Where the Buses Don't Run  
-Where the action’s so intense even the buses refuse to show up 🚌❌. Miami’s public transit: officially on vacation 🌴😅.
+3. **Golden Triangle 1&2**  
+International crime, local carnage — because smuggling drugs isn’t messy enough without a side of betrayal 🌍💉🔪.
 
-4. Golden Triangle  
-Two parts of international intrigue, because one part wasn’t enough to confuse everyone 🌍🕵️‍♂️🤯.
+4. **Calderone's Return 1&2**  
+Calderone’s back, and so is the death toll — Miami’s unofficial motto: “Come for the beaches, stay for the bullets” 🔥🔫😵.
 
-5. Little Prince  
-An episode so good, even the criminals pause to admire the sunset… before getting arrested 🌅🚓.
+5. **Bushido**  
+When honor means stabbing your way through Miami’s crime scene… politely 🥋🔪😬.
 
-6. Definitely Miami  
-When you’re not sure if it’s a crime show or a travel ad—spoiler: it’s definitely Miami 🌞🌴🕶️.
+6. **Nobody Lives Forever**  
+Hint: If you hear that title, you’re probably dead — or about to be. Spoiler: It’s Miami 🕶️⚰️.
 
-7. The Afternoon Plane  
-The only time catching a plane feels more dangerous than catching a criminal… Miami traffic, am I right? ✈️🚗💥.
+7. **Home Invaders**  
+Breaking and entering goes wrong when the homeowners are packing more heat than the burglars 🏠🔫🔥.
 
-8. Payback  
-Revenge is a dish best served cold—unless you’re Crockett, who prefers it with a side of sunglasses and cigars 😎🔥💼.
+8. **Evan**  
+Evan’s so shady, even the darkness looks nervous 🌑😶‍🌫️.
+
+9. **Lombard**  
+Fancier name, same brutal end — in Miami, prestige can’t save you from a bullet 💼🔫☠️.
+
+10. **Son's and Lovers**  
+Family dinners with Crockett: where the only thing colder than the leftovers is the killer glare 🔪🍽️🖤.
+
+11. **Definitely Miami**  
+Where the sun is hot, the drinks are cold, and the murder rate is even hotter ☀️🍸💀.
+
+12. **The Great McCarthy**  
+Great name, terrible luck — running from cops and karma both bite in Miami 🏃‍♂️🔪💥.
   
 ## How to enjoy this repo: 🎉📖
 1. Laugh at the fact that this is actually a show. 😂📺
