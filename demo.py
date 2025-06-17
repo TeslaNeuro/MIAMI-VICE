@@ -1,3 +1,8 @@
+# A small demo to mind map or story board
+# Miami Vice Inspired
+# Arshia Keshvari
+# 17/06/2025
+
 import pygame
 import sys
 import textwrap
