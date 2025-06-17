@@ -33,40 +33,40 @@ It's like someone looked at the 80s and thought, "What if cops wore neon and lis
 ## Best episodes to pretend you're cultured: 🎭📚
 
 1. **Brother's Keeper 1&2**  
-Two cops walk into Miami… and somehow the criminals die faster than their one-liners 🚤🔫😈.
+Cops. Boats. Hair. Boom. 🚤💥🕶️
 
 2. **Out Where the Buses Don't Run**  
-So much death, even the buses don’t want to stick around for the body count 🚌☠️.
+Retired cop or ghost? Yes. 🚌👻
 
 3. **Golden Triangle 1&2**  
-International crime, local carnage — because smuggling drugs isn’t messy enough without a side of betrayal 🌍💉🔪.
+Flashbacks, kung fu, and dad issues. 🥋📦🧠
 
 4. **Calderone's Return 1&2**  
-Calderone’s back, and so is the death toll — Miami’s unofficial motto: “Come for the beaches, stay for the bullets” 🔥🔫😵.
+He’s back... and still allergic to shirts. 🔫🌴👕
 
 5. **Bushido**  
-When honor means stabbing your way through Miami’s crime scene… politely 🥋🔪😬.
+Ninjas, honor, and neckties of vengeance. 🥷🎀💥
 
 6. **Nobody Lives Forever**  
-Hint: If you hear that title, you’re probably dead — or about to be. Spoiler: It’s Miami 🕶️⚰️.
+Crockett tries dating. Miami says no. 💔🕶️🪦
 
 7. **Home Invaders**  
-Breaking and entering goes wrong when the homeowners are packing more heat than the burglars 🏠🔫🔥.
+Wrong house, wrong day, lots of bullets. 🏠🔫📦
 
 8. **Evan**  
-Evan’s so shady, even the darkness looks nervous 🌑😶‍🌫️.
+Old friend, new trauma. Nice. 😬🎭🖤
 
 9. **Lombard**  
-Fancier name, same brutal end — in Miami, prestige can’t save you from a bullet 💼🔫☠️.
+Fancy mob guy meets fancy justice. 💼💣🧨
 
 10. **Son's and Lovers**  
-Family dinners with Crockett: where the only thing colder than the leftovers is the killer glare 🔪🍽️🖤.
+Crockett’s love life: now with fireworks. 💘💥🍸
 
 11. **Definitely Miami**  
-Where the sun is hot, the drinks are cold, and the murder rate is even hotter ☀️🍸💀.
+Hot sun, cold drinks, unhinged Nugent. ☀️🍹🦁
 
 12. **The Great McCarthy**  
-Great name, terrible luck — running from cops and karma both bite in Miami 🏃‍♂️🔪💥.
+Fast boats, fast betrayal, good hair. 🚤🧼😎
   
 ## How to enjoy this repo: 🎉📖
 1. Laugh at the fact that this is actually a show. 😂📺
