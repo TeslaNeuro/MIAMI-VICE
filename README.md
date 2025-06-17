@@ -1,5 +1,19 @@
 # MIAMI VICE 🌴🕶️
 
+---
+
+### 🚧 Developer's Note
+
+This is a personal learning project exploring game development through parody.  
+It includes mature humor and stylistic references to the 1980s TV show *Miami Vice*.  
+The tone is intentionally exaggerated and satirical. This repo exists primarily as a sandbox for coding, design, and creative experimentation.
+
+All content is for educational and non-commercial purposes.  
+Code is licensed under the [MIT License](./LICENSE).  
+All show references remain the property of their respective copyright holders.
+
+---
+
 ## What is this, the 80s? 📺✨
 Yeah, you guessed it. *Miami Vice* : the show that's basically crime fighting meets pastel fashion disaster. 👮‍♂️💖  
 It's like someone looked at the 80s and thought, "What if cops wore neon and listened to saxophones all day?" 🎷🌈
